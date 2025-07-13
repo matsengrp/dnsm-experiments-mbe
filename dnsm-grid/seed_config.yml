@@ -1,0 +1,13 @@
+model_type: "dnsm"
+model_names: ["dnsm_1m"]
+train_data_nicknames: ["v1jaffe+v1tang"]
+test_data_nicknames: ["v1rodriguezV34"]
+# model_names: ["dnsm_wig_1m"]
+# train_data_nicknames: ["tang250"]
+# train_data_nicknames: ["tang1"]
+# test_data_nicknames: ["v1rodriguezV34"]
+#test_data_nicknames: ["tst"]
+# We'll re-train both with and without this multihit correction:
+multihit_crepe_prefix: null
+replicate_count: 5
+epochs: 100

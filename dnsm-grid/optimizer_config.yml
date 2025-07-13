@@ -1,0 +1,13 @@
+model_type: "dnsm"
+model_names: ["dnsm_wig_sml"]
+train_data_nicknames: ["tst"]
+test_data_nicknames: ["tst"]
+# model_names: ["dnsm_wig_1m"]
+# train_data_nicknames: ["tang250"]
+# train_data_nicknames: ["tang1"]
+# test_data_nicknames: ["v1rodriguezV34"]
+#test_data_nicknames: ["tst"]
+optimizers: ["Adam", "AdamW", "RMSprop"]
+# optimizers: ["Adam", "AdamW", "RMSprop", "Adagrad", "Adadelta", "NAdam", "SGDMomentum"]
+replicate_count: 1
+epochs: 100

@@ -1,0 +1,9 @@
+model_type: "dnsm"
+model_names: ["dnsm_77k", "single"]
+# model_names: ["single"]
+# train_data_nicknames: ["tst"]
+train_data_nicknames: ["tstPaired", "tst", "tstWithN", "tst@1/3@tst"]
+test_data_nicknames: ["tst"]
+# test_data_nicknames: ["tstWithN"]
+training_methods: ["joint"]
+min_log_prob: -4

@@ -1,0 +1,14 @@
+model_type: "dnsm"
+# model_names: ["single"]
+model_names: ["single", "dnsm_1m"]
+# model_names: ["single", "dnsm_13k", "dnsm_77k", "dnsm_1m", "dnsm_4m"]
+# model_names: ["dnsm_13k", "single"]
+#train_data_nicknames: ["v1jaffe+v1tang"]
+# train_data_nicknames: ["v1jaffe+v1tang"]
+train_data_nicknames: ["v1jaffe+v1tang", "jaffeTangDnsmSim", "jaffeTangDnsmSim250k", "jaffeTangDnsmSim100k", "jaffeTangDnsmSim50k"]
+# train_data_nicknames: ["v1tang"]
+#test_data_nicknames: ["tang1"]
+# test_data_nicknames: ["v1rodriguez"]
+test_data_nicknames: ["rodriguezDnsmSim"]
+training_methods: ["joint"]
+min_log_prob: -4

@@ -1,0 +1,7 @@
+model_names: ["dnsm_sml"]
+train_data_nicknames: ["tst"]
+#train_data_nicknames: ["tang250"]
+test_data_nicknames: ["tst"]
+optimizers: ["Adam", "AdamW"]
+replicate_count: 2
+epochs: 2

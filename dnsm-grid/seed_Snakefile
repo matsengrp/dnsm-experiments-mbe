@@ -1,0 +1,48 @@
+import os
+import random
+import sys
+import time
+import yaml
+
+from netam.framework import crepe_exists
+from dnsmex.dxsm_zoo import retrained_model_str, retrained_model_path
+
+configfile: "seed_config.yml"
+
+model_type = config["model_type"]
+retrain_model = __import__(f"dnsmex.{model_type}_zoo", fromlist=["retrain_model"]).retrain_model
+
+model_names = config["model_names"]
+train_data_nicknames = config["train_data_nicknames"]
+test_data_nicknames = config["test_data_nicknames"]
+seeds = range(config["replicate_count"])
+epochs = int(config["epochs"])
+
+final_output_path = "_ignore/model_compare.csv"
+
+
+def retrained_model_yml(model_name, data_nickname, train_label, seed):
+    return f"{retrained_model_path(model_name, data_nickname, train_label, seed)}.yml"
+
+
+def test_output_path(model_name, data_nickname, train_label, seed, dataset_name):
+    trained_model = retrained_model_str(model_name, data_nickname, train_label, seed)
+    return f"_ignore/test_output/{trained_model}-ON-{dataset_name}.csv"
+
+
+rule all:
+    input: [retrained_model_yml(m, d, "joint", s) for m in model_names for d in train_data_nicknames for s in seeds]
+
+rule retrain_model:
+    priority: 1  # Priority is used to ensure that all trainings are done before write_test_accuracy.
+    output:
+        trained_model=retrained_model_yml("{model_name}", "{data_nickname}", "{train_label}", "{seed}")
+    run:
+        retrain_model(
+            wildcards.model_name, 
+            wildcards.data_nickname, 
+            wildcards.train_label, 
+            int(wildcards.seed), 
+            {}, 
+            epochs,
+	)
