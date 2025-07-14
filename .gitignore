@@ -178,4 +178,6 @@ _output/
 
 # OS files
 .DS_Store
-Thumbs.dbnotebooks/processed/
+Thumbs.db
+
+notebooks/processed/
