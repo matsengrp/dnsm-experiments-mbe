@@ -12,7 +12,7 @@ LOCAL_PATHS = {
     "MISC": "~/data/misc",
     "SABDAB": "~/sabdab",
     "FIGURES_DIR": "~/writing/talks/figures/bcr-mut-sel/",
-    "DNSM_TRAINED_MODELS_DIR": "~/re/dnsm-experiments-1/dnsm-train/trained_models",
+    "DNSM_TRAINED_MODELS_DIR": "~/re/dnsm-experiments-mbe/dnsm-train/trained_models",
     "DDSM_TRAINED_MODELS_DIR": "~/re/dnsm-experiments-1/ddsm-train/trained_models",
     "DASM_TRAINED_MODELS_DIR": "~/re/dnsm-experiments-1/dasm-train/trained_models",
     "DNSM_TEST_OUTPUT_DIR": "~/re/dnsm-experiments-1/dnsm-train/_ignore/test_output",

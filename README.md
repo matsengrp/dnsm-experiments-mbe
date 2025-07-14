@@ -7,6 +7,8 @@ This repository contains the code and data for reproducing the experiments from:
 
 Authors: Frederick A. Matsen IV, Kevin Sung, Mackenzie M. Johnson, Will Dumm, David Rich, Tyler Starr, Yun S. Song, Philip Bradley, Julia Fukuyama, Hugh K. Haddox
 
+**Netam Version**: This archive corresponds to [netam v0.2.2](https://github.com/matsengrp/netam/releases/tag/v0.2.2)
+
 ## Overview
 
 This archive contains all the necessary notebooks, trained models, and supporting code to reproduce the figures and analyses from the paper. The Deep Natural Selection Model (DNSM) predicts the strength of selection on each amino acid site in antibody sequences using a transformer-encoder architecture.
