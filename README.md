@@ -41,9 +41,10 @@ First, install the [netam](https://github.com/matsengrp/netam) package in a virt
 python -m venv netam_env
 source netam_env/bin/activate
 
-# Clone and install netam
+# Clone and install netam v0.2.2
 git clone https://github.com/matsengrp/netam.git
 cd netam
+git checkout v0.2.2
 pip install -e .
 cd ..
 ```
