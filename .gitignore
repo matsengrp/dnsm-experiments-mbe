@@ -173,9 +173,16 @@ _output/
 # Data files that might be large
 *.csv.gz
 *.pkl
-*.pth
 *.pt
+
+# Exclude most .pth files but allow essential trained models
+*.pth
+!dnsm-train/trained_models/*v1jaffe+v1tang*.pth
+!dnsm-train/trained_models/*jaffeTangDnsmSim*.pth
+!dnsm-train/trained_models/neutral-*.pth
 
 # OS files
 .DS_Store
 Thumbs.db
+
+notebooks/processed/

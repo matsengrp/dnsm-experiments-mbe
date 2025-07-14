@@ -1,4 +1,4 @@
-# Deep Natural Selection Model (DNSM) - Molecular Biology and Evolution Archive
+# Experiments Repository for MBE paper on Deep Natural Selection Models (DNSMs)
 
 This repository contains the code and data for reproducing the experiments from:
 
@@ -6,6 +6,8 @@ This repository contains the code and data for reproducing the experiments from:
 *Accepted for publication in Molecular Biology and Evolution*
 
 Authors: Frederick A. Matsen IV, Kevin Sung, Mackenzie M. Johnson, Will Dumm, David Rich, Tyler Starr, Yun S. Song, Philip Bradley, Julia Fukuyama, Hugh K. Haddox
+
+**Netam Version**: This archive corresponds to [netam v0.2.2](https://github.com/matsengrp/netam/releases/tag/v0.2.2)
 
 ## Overview
 
@@ -39,9 +41,10 @@ First, install the [netam](https://github.com/matsengrp/netam) package in a virt
 python -m venv netam_env
 source netam_env/bin/activate
 
-# Clone and install netam
+# Clone and install netam v0.2.2
 git clone https://github.com/matsengrp/netam.git
 cd netam
+git checkout v0.2.2
 pip install -e .
 cd ..
 ```
@@ -83,21 +86,6 @@ ulimit -n 8192
 cd dnsm-train
 snakemake -n  # dry run to see what would be executed
 snakemake -j4  # run with 4 parallel jobs
-```
-
-## Reproducing Paper Figures
-
-To reproduce all figures from the paper:
-
-```bash
-# Run all DNSM paper notebooks
-./run_notebooks.sh notebooks/dnsm_paper/
-```
-
-Or run individual notebooks using Jupyter:
-
-```bash
-jupyter notebook notebooks/dnsm_paper/dnsm_oe.ipynb
 ```
 
 ## Data
