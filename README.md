@@ -1,4 +1,4 @@
-# Deep Natural Selection Model (DNSM) - Molecular Biology and Evolution Archive
+# Experiments Repository for MBE paper on Deep Natural Selection Models (DNSMs)
 
 This repository contains the code and data for reproducing the experiments from:
 
