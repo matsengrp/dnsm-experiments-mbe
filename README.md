@@ -2,8 +2,9 @@
 
 This repository contains the code and data for reproducing the experiments from:
 
-**"A sitewise model of natural selection on individual antibodies via a transformer-encoder"**  
-*Accepted for publication in Molecular Biology and Evolution*
+**"A sitewise model of natural selection on individual antibodies via a transformer-encoder"**
+*Published in Molecular Biology and Evolution*
+DOI: [10.1093/molbev/msaf186](https://doi.org/10.1093/molbev/msaf186)
 
 Authors: Frederick A. Matsen IV, Kevin Sung, Mackenzie M. Johnson, Will Dumm, David Rich, Tyler Starr, Yun S. Song, Philip Bradley, Julia Fukuyama, Hugh K. Haddox
 
@@ -122,12 +123,17 @@ Key examples from the paper:
 If you use this code or data, please cite:
 
 ```bibtex
-@article{matsen2025dnsm,
+@article{Matsen2025-tv,
   title={A sitewise model of natural selection on individual antibodies via a transformer-encoder},
-  author={Matsen IV, Frederick A and Sung, Kevin and Johnson, Mackenzie M and Dumm, Will and Rich, David and Starr, Tyler and Song, Yun S and Bradley, Philip and Fukuyama, Julia and Haddox, Hugh K},
-  journal={Molecular Biology and Evolution},
+  author={Matsen IV, Frederick A and Sung, Kevin and Johnson, Mackenzie M and Dumm, Will and Rich, David and Starr, Tyler N and Song, Yun S and Bradley, Philip and Fukuyama, Julia and Haddox, Hugh K},
+  journal={Mol. Biol. Evol.},
+  volume={42},
+  number={8},
+  pages={1--15},
+  month={jul},
   year={2025},
-  note={Accepted for publication}
+  doi={10.1093/molbev/msaf186},
+  pmid={40794593}
 }
 ```
 
